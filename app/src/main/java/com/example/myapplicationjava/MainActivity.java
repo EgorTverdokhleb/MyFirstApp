@@ -3,6 +3,7 @@ package com.example.myapplicationjava;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("ET", "MainActivity -> onCreate()");
                 Toast.makeText(getApplication(), getString(R.string.hello_world), Toast.LENGTH_LONG ).show();
             }
         });
